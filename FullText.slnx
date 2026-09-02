@@ -3,7 +3,10 @@
     <Project Path="FullText.AppHost/FullText.AppHost.csproj" />
     <Project Path="FullText.ServiceDefaults/FullText.ServiceDefaults.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
   <Folder Name="/src/">
-    <Project Path="FullText/FullText.csproj" />
+    <Project Path="src/FullText.API/FullText.API.csproj" />
   </Folder>
 </Solution>
