@@ -17,6 +17,7 @@ internal static class ResourceBuilderExtensions
         {
             pgadmin
                 .WithImage("dpage/pgadmin4:9.17")
+                .WithContainerName("full-text-pgadmin4")
                 .WithLifetime(ContainerLifetime.Persistent)
                 .WithHostPort(5050);
 
