@@ -22,9 +22,9 @@ public sealed record class PagedResult<T>
     public int PageSize { get; }
     public int TotalCount { get; }
     public int TotalPages { get; }
-    public IReadOnlyList<T> Items { get; }
     public bool HasNext => Page * PageSize < TotalCount;
     public bool HasPrevious => Page > 1;
+    public IReadOnlyList<T> Items { get; }
 
     public static async Task<PagedResult<T>> CreateAsync(
         IQueryable<T> query,
