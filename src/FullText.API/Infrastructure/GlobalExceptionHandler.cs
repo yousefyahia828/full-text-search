@@ -12,12 +12,12 @@ public sealed class GlobalExceptionHandler(
         Exception exception,
         CancellationToken cancellationToken)
     {
-        logger.LogError(exception, "Unhandled exception occurred");
+        logger.LogError(exception, "Unhandled error occurred");
 
         var problem = new ProblemDetails
         {
-            Type = "https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.1",
-            Title = "An unhandled exception occurred.",
+            Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
+            Title = "An unhandled error occurred.",
             Status = StatusCodes.Status500InternalServerError,
         };
 
